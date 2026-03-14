@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Crew + Profile Timeline</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/crew.css" />
+    <link rel="stylesheet" href="../css/background_video.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/mobile-nav.css" />
+    <link rel="stylesheet" href="../css/countdown-timer.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ===== BACKGROUND VIDEO ===== -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../background_video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- ===== Navigation ===== -->
+    <nav class="anu-nav" role="navigation">
+      <div class="anu-brand">
+        <img
+          src="../media/Anu-logo.jpeg"
+          alt="Anuttaram logo"
+          class="anu-brand-img"
+        />
+        <h1 class="anu-brand-title">Anuttaram 3.0</h1>
+      </div>
+
+      <!-- Desktop Nav -->
+      <ul class="anu-nav-list">
+        <li><a href="../index.html" class="anu-nav-link">Home</a></li>
+        <li><a href="../Inner/about.html" class="anu-nav-link">About</a></li>
+        <li><a href="../Inner/events.html" class="anu-nav-link">Events</a></li>
+        <li>
+          <a href="../Inner/schedule.html" class="anu-nav-link">Schedule</a>
+        </li>
+        <li>
+          <a href="../Inner/gallery.html" class="anu-nav-link">Gallery</a>
+        </li>
+        <li>
+          <a href="../Inner/contact.html" class="anu-nav-link">Contact</a>
+        </li>
+        <li>
+          <a href="../Inner/rulebook.html" class="anu-nav-link">Rulebook</a>
+        </li>
+        <li><a href="" class="always">Crew</a></li>
+      </ul>
+
+      <div class="anu-nav-right">
+        <div class="anu-countdown-nav" id="countdown-nav" aria-live="polite">
+          Starts in: --
+        </div>
+        <button
+          class="anu-hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="anu-nav-overlay"></div>
+
+    <!-- Mobile Nav -->
+    <div class="anu-mobile-nav">
+      <a href="../index.html" class="anu-mobile-link" data-stagger="1">Home</a>
+      <a href="../Inner/about.html" class="anu-mobile-link" data-stagger="2"
+        >About</a
+      >
+      <a href="../Inner/events.html" class="anu-mobile-link" data-stagger="3"
+        >Events</a
+      >
+      <a href="../Inner/schedule.html" class="anu-mobile-link" data-stagger="4"
+        >Schedule</a
+      >
+      <a href="../Inner/gallery.html" class="anu-mobile-link" data-stagger="5"
+        >Gallery</a
+      >
+      <a href="../Inner/contact.html" class="anu-mobile-link" data-stagger="6"
+        >Contact</a
+      >
+      <a href="../Inner/rulebook.html" class="anu-mobile-link" data-stagger="7"
+        >Rulebook</a
+      >
+      <a href="" class="mob-always" data-stagger="8">Crew</a>
+    </div>
+    <br /><br /><br />
+
+    <div class="container">
+      <!-- Crew Section -->
+      <section class="crew-wrap">
+        <div class="crew-header">
+          <h1 id="mainTitle">Our Employers</h1>
+          <div class="crew-sub">
+            Meet the people behind the project — talent & expertise.
+          </div>
+          <div class="underline"></div>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab-btn active" data-filter="all" aria-selected="true">
+            Our Employers
+          </button>
+          <button class="tab-btn" data-filter="crew">Our Crew</button>
+          <button class="tab-btn" data-filter="meet">Meet Our Team</button>
+          <button class="tab-btn" data-filter="devs">Our Developers</button>
+        </div>
+
+        <div class="grid" id="teamGrid">
+          <!-- Sample Cards -->
+          <div class="card" data-groups="all,crew,meet">
+            <div class="card-top"></div>
+            <div class="avatar">
+              <img src="../media/me.png" alt="Om Kumar" />
+            </div>
+            <div class="card-body">
+              <div class="name">Om Kumar</div>
+              <div class="role">Founder & CIO</div>
+            </div>
+          </div>
+
+          <div class="card" data-groups="all,devs,meet">
+            <div class="card-top"></div>
+            <div class="avatar">
+              <img src="../media/profile.jpg" alt="Aniket Raj" />
+            </div>
+            <div class="card-body">
+              <div class="name">Aniket Raj</div>
+              <div class="role">Co-founder & CTO</div>
+            </div>
+          </div>
+
+          <div class="card" data-groups="all,crew,devs">
+            <div class="card-top"></div>
+            <div class="avatar">
+              <img src="../media/om.jpeg" alt="Madhav Kumar" />
+            </div>
+            <div class="card-body">
+              <div class="name">Madhav Kumar</div>
+              <div class="role">CTO of Source</div>
+            </div>
+          </div>
+
+          <div class="card" data-groups="all,meet">
+            <div class="card-top"></div>
+            <div class="avatar">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.-O9DSS_AIFxQ7dGkI5eWkQHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Akash"
+              />
+            </div>
+            <div class="card-body">
+              <div class="name">Akash Kumar</div>
+              <div class="role">CTO of Universal</div>
+            </div>
+          </div>
+
+          <div class="card" data-groups="all,crew,meet,devs">
+            <div class="card-top"></div>
+            <div class="avatar">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.eXWcaYbEtO2uuexHM8sAwwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Vikash Kumar"
+              />
+            </div>
+            <div class="card-body">
+              <div class="name">Vikash Kumar</div>
+              <div class="role">Full-Stack Engineer</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Developer Section -->
+      <section class="devs-wrap">
+        <div class="section-header">
+          <h2>Meet Our Developer</h2>
+          <p>
+            The mind behind the magic — building and maintaining the platform.
+          </p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="devs-grid">
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img src="../media/developer.png" alt="Om Kumar" />
+            </div>
+            <div class="dev-info">
+              <div class="dev-name">Om Kumar</div>
+              <div class="dev-role">Full-Stack Developer & UI/UX Designer</div>
+              <div class="dev-location">Sheohar, Bihar, India</div>
+              <div class="dev-bio">
+                Hi! I’m Om Kumar, a passionate Full-Stack Developer & UI/UX
+                Designer. I love creating beautiful, functional websites and
+                seamless digital experiences.
+              </div>
+              <div class="dev-socials">
+                <a
+                  href="https://www.facebook.com/share/1Awk36hYcN/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://x.com/OMKUMAR00116" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://in.linkedin.com/in/omkumar00116"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/Omkumartiwarii" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h6>About</h6>
+          <p>
+            We provide quality education and encourage students to participate
+            in sports.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Contacts</h6>
+          <p>
+            Email:
+            <a href="mailto:gecsheohar@gmail.com">gecsheohar@gmail.com</a>
+          </p>
+          <p>Phone: +91-1234567890</p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Find Us On</h6>
+          <div class="social-links">
+            <a href="https://x.com/gecsheohar" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/share/19nrqgAKTz/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/gec_sheohar" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/government-engineering-college-sheohar-8a27262a8/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h6>Location</h6>
+          <p>
+            Government Engineering College Sheohar,<br />
+            Chhatauna Bisunpur, Block- Piprahi, Sheohar,<br />
+            Bihar, Pin Code-843329<br />
+            Mob- 09031085516
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 ANUTTARAM 3.0 | Government Engineering College Sheohar — All
+        Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/countdown-timer.js"></script>
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/crew.js"></script>
+  </body>
+</html>
